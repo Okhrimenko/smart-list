@@ -1,4 +1,5 @@
 node_modules
+karmaResults
 .vscode
 dist
 package-lock.json

@@ -1,6 +1,6 @@
 {
   "version": "1.0.6",
-  "name": "vertice-frontend-template",
+  "name": "smart-list",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -11,8 +11,8 @@
     "@types/enzyme": "",
     "@types/mocha": "",
     "@types/node": "",
-    "@types/react": "",
-    "@types/react-dom": "",
+    "@types/react": "^16.0.0",
+    "@types/react-dom": "^16.0.0",
     "@types/webpack": "",
     "@types/webpack-env": "",
     "babel-cli": "6.26.0",

@@ -13,7 +13,7 @@ commonConfig.plugins.push(
     })
 )
 commonConfig.devtool = "inline-source-map";
-(commonConfig.module as any).loaders.push({ //delays coverage til after tests are run, fixing transpiled source coverage error
+commonConfig.module.rules.push({ //delays coverage til after tests are run, fixing transpiled source coverage error
     enforce: 'post',
     test: /\.(ts|tsx)$/,
     exclude: [
