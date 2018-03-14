@@ -1,6 +1,5 @@
 ﻿import * as path from 'path';
 import commonConfig from "./webpack.common";
-import { OldModule } from "webpack";
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 commonConfig.entry = "./test/index.tsx";
@@ -14,7 +13,7 @@ commonConfig.plugins.push(
     })
 )
 commonConfig.devtool = "inline-source-map";
-(commonConfig.module as OldModule).loaders.push({ //delays coverage til after tests are run, fixing transpiled source coverage error
+(commonConfig.module as any).loaders.push({ //delays coverage til after tests are run, fixing transpiled source coverage error
     enforce: 'post',
     test: /\.(ts|tsx)$/,
     exclude: [
