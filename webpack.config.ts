@@ -21,20 +21,6 @@ if (environment === "production") {
             commonjs: 'react-dom',
             amd: 'react-dom',
             umd: 'react-dom'
-        },
-        'axios': {
-            root: 'axios',
-            commonjs2: 'axios',
-            commonjs: 'axios',
-            amd: 'axios',
-            umd: 'axios'
-        },
-        'altareturn-ui-controls': {
-            root: 'altareturn-ui-controls',
-            commonjs2: 'altareturn-ui-controls',
-            commonjs: 'altareturn-ui-controls',
-            amd: 'altareturn-ui-controls',
-            umd: 'altareturn-ui-controls'
         }
     };
     commonConfig.externals = externals;

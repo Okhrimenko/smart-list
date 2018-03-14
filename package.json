@@ -15,8 +15,6 @@
     "@types/react-dom": "",
     "@types/webpack": "",
     "@types/webpack-env": "",
-    "altareturn-ui-controls": "^1.1.73",
-    "axios": "0.17.1",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
@@ -72,6 +70,6 @@
     "prodpack": "SET NODE_ENV=production&& webpack -p",
     "test": "karma start",
     "test-single": "karma start --singleRun",
-    "start": "http-server -p 3000 dist"
+    "start": "http-server -p 3300 dist"
   }
 }

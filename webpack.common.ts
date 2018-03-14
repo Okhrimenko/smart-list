@@ -11,7 +11,7 @@ const config: Configuration = {
     },
     target: 'web',
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.scss$/,
                 use: [
