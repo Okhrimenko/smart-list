@@ -1,5 +1,10 @@
-﻿body {
+﻿html, body {
     font-family: 'Segoe UI';
+    height: 100%;
+}
+
+#root{
+    height: 100%;
 }
 
 .hello-world {

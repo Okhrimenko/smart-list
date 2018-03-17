@@ -1,4 +1,4 @@
 import SmartList from "./list"
-import { SimpleListItem } from "./list-items"
+import { SimpleListItem, ImageListItem } from "./list-items"
 
-export { SmartList, SimpleListItem }
+export { SmartList, SimpleListItem, ImageListItem }

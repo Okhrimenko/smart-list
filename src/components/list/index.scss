@@ -11,6 +11,12 @@
         li{
             &:hover{
                 background: #ebebeb;
+                cursor: pointer;
+            }
+            &:last-child{
+                div{
+                    border: none;
+                }
             }
         }
     }
