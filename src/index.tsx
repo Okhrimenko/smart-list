@@ -1,5 +1,6 @@
 import * as React from "react"
 import TestComponent from './components/TestComponent'
+import { SmartList , SimpleListItem } from "./components";
 import './styles/global.scss';
 
 export interface AppProps {
@@ -15,7 +16,11 @@ export default class App extends React.Component<AppProps, AppState> {
 
     render() {
         return <div>
-            <TestComponent label="Hello World!" />            
+            <TestComponent label="Hello World!" />     
+            <SmartList>
+                <SimpleListItem title={"SimpleListItem"} onClick={()=>console.log("SimpleListItem")} />
+                
+            </SmartList>       
         </div>;
     }
 }

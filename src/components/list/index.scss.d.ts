@@ -1,0 +1,1 @@
+export const smartList: string;
