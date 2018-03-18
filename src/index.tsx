@@ -1,6 +1,6 @@
 import * as React from "react"
 import TestComponent from './components/TestComponent'
-import { SmartList, SimpleListItem, ImageListItem } from "./components";
+import { SmartList, SimpleListItem, ImageListItem, ExpandableListItem } from "./components";
 import './styles/global.scss';
 
 export interface AppProps {
@@ -12,6 +12,7 @@ export interface AppState {
 export default class App extends React.Component<AppProps, AppState> {
     constructor(props) {
         super(props);
+       
     }
 
     render() {
@@ -19,8 +20,8 @@ export default class App extends React.Component<AppProps, AppState> {
             <TestComponent label="Hello World!" />
             <SmartList>
                 <SimpleListItem title={"SimpleListItem"} onClick={() => console.log("SimpleListItem")} />
-                <SimpleListItem title={"SimpleListItem_1"} onClick={() => console.log("SimpleListItem_1")} />
-                <ImageListItem 
+                <ExpandableListItem title={"header"} text={"text"} />
+                <ImageListItem
                     height={40}
                     title={"Andrew Okhrimenko"}
                     imageSrc={"https://avatars2.githubusercontent.com/u/5503248?s=40&v=4"}

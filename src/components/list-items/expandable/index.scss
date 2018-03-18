@@ -1,0 +1,23 @@
+.expandable-list-item{
+    padding: 5px;
+    border-bottom:  1px solid #cccccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .header{
+        display: table-row;
+
+        .header-title{
+            display: table-cell;
+        }
+        .arrow{
+            display: table-cell;
+        }
+    }
+
+    .body{
+        display: table-row;
+    }
+    
+}

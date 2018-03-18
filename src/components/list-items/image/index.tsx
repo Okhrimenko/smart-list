@@ -16,12 +16,23 @@ class ImageListItem extends React.Component<ImageListItemProps, any>{
         }
     }
 
+    get imageStyle(){
+        const {imageSrc} = this.props;
+        let height = this.props.height ? this.props.height : this._defaultHeight;
+        return {
+            backgroundImage: `url(${imageSrc})`,
+            height:`${height}px`,
+            width  :`${height}px`,
+            minWidth :`${height}px`
+        }
+    }
+
     render() {
         const { title, imageSrc } = this.props;
         let height = this.props.height ? this.props.height : this._defaultHeight;
 
         return (<div className="image-list-item" style={{height :`${height}px`}} onClick={this.onClickHandler}>
-            <div className="image" style={{backgroundImage: `url(${imageSrc})`, height:`${height}px`, width:`${height}px`}}></div>
+            <div className="image" style={this.imageStyle}></div>
             <div className="title">{title}</div>
         </div>);
     }

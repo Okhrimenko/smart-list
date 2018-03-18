@@ -1,17 +1,24 @@
 .smart-list{
     border: 1px solid #cccccc;
     height: 100%;
-    width: 100%;
+    width: 300px;
+    overflow: auto;
 
     ul{
+        display: table;
+        width: 100%;
         list-style-type: none;
         margin: 0;
         padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
 
         li{
             &:hover{
                 background: #ebebeb;
                 cursor: pointer;
+                white-space: nowrap;
             }
             &:last-child{
                 div{
