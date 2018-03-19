@@ -12,13 +12,26 @@ export interface AppState {
 export default class App extends React.Component<AppProps, AppState> {
     constructor(props) {
         super(props);
-       
+
     }
 
     render() {
+        const items = [
+            { name: "Andy", age: 23 },
+            { name: "Carl", age: 19 },
+            { name: "Tom", age: 34 }
+        ];
+
         return <div>
             <TestComponent label="Hello World!" />
-            <SmartList>
+
+            <SmartList 
+                items={items} 
+                label={(item => item.name)}
+                onListItemClick={(item)=>console.log(item.name)}
+                renderListItem={(item)=> <div>{`${item.name} ${item.age}`}</div>}
+                >
+
                 <SimpleListItem title={"SimpleListItem"} onClick={() => console.log("SimpleListItem")} />
                 <ExpandableListItem title={"header"} text={"text"} />
                 <ImageListItem
